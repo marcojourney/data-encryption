@@ -1,0 +1,1 @@
+https://cryptojs.gitbook.io/docs/
