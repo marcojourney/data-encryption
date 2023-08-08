@@ -26,7 +26,13 @@ function aesDecrypt(word) {
 };
 
 const bankAcccNo = '123456789';
+const amount = 100;
 
 const encryptedBankAcc = aesEncrypt(bankAcccNo);
+const encryptedAmount = aesEncrypt(amount.toString());
+
 console.log('Encrypted Bank Acc.', encryptedBankAcc);
 console.log('Decrypted Bank Acc.', aesDecrypt(encryptedBankAcc));
+
+console.log('Encrypted Amount.', encryptedAmount);
+console.log('Decrypted Amount.', aesDecrypt(encryptedAmount));
